@@ -1,0 +1,9 @@
+﻿  Problem1.cpp
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(92,25): error C2280: "Witch::Witch(const Witch &)": предпринята попытка ссылки на удаленную функцию
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(55): message : в этом месте создано компилятором: "Witch::Witch"
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(55,1): message : "Witch::Witch(const Witch &)": функция неявно удалена, так как элемент данных вызывает удаленную или недоступную функцию "std::unique_ptr<Cat,std::default_delete<Cat>>::unique_ptr(const std::unique_ptr<Cat,std::default_delete<Cat>> &)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\memory(3237,5): message : "std::unique_ptr<Cat,std::default_delete<Cat>>::unique_ptr(const std::unique_ptr<Cat,std::default_delete<Cat>> &)": функция явно удалена.
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(109,16): error C2280: "Witch &Witch::operator =(const Witch &)": предпринята попытка ссылки на удаленную функцию
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(55): message : в этом месте создано компилятором: "Witch::operator ="
+C:\Users\Max\source\repos\Sprint10\Lesson2\Problem1\Problem1\Problem1.cpp(55,1): message : "Witch &Witch::operator =(const Witch &)": функция неявно удалена, так как элемент данных вызывает удаленную или недоступную функцию "std::unique_ptr<Cat,std::default_delete<Cat>> &std::unique_ptr<Cat,std::default_delete<Cat>>::operator =(const std::unique_ptr<Cat,std::default_delete<Cat>> &)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\memory(3238,17): message : "std::unique_ptr<Cat,std::default_delete<Cat>> &std::unique_ptr<Cat,std::default_delete<Cat>>::operator =(const std::unique_ptr<Cat,std::default_delete<Cat>> &)": функция явно удалена.
