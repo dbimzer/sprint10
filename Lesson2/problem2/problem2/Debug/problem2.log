@@ -1,0 +1,4 @@
+﻿  problem2.cpp
+C:\Users\Max\source\repos\Sprint10\Lesson2\problem2\problem2\problem2.cpp(50,1): error C2440: =: невозможно преобразовать "std::unique_ptr<TreeNode<int>,std::default_delete<TreeNode<int>>>" в "TreeNode<int> *"
+C:\Users\Max\source\repos\Sprint10\Lesson2\problem2\problem2\problem2.cpp(50,25): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Max\source\repos\Sprint10\Lesson2\problem2\problem2\problem2.cpp(93): message : выполняется компиляция ссылки на экземпляр шаблон функции "TreeNode<int> *begin<int>(TreeNode<int> *) noexcept"
