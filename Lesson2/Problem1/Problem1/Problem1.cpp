@@ -39,6 +39,24 @@ public:
         : name_(name) {
     }
 
+    Witch(const Witch& other)
+        : name_(other.name_)
+        , cat_(make_unique<Cat>(*other.cat_)) {
+    }
+
+    Witch(Witch&&) = default;
+
+    Witch& operator=(const Witch& rhs) {
+        if (this != &rhs) {
+            name_ = rhs.name_;
+            cat_ = make_unique<Cat>(*rhs.cat_);
+        }
+
+        return *this;
+    }
+
+    Witch& operator=(Witch&&) = default;
+
     const string& GetName() const noexcept {
         return name_;
     }
